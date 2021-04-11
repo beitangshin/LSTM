@@ -417,7 +417,7 @@ def soft_attn():
         if epoch == 39:
             print('testloss:',test_loss)
             test_result=test_result[:,:j,:]
-            np.save(r'./result/soft_attn_predict_tra.npy',test_result)
+            np.save(r'./result/soft_attn_ predict_tra.npy',test_result)
             np.save(r'./result/true_tra.npy',y_test[:,1:,:])
             break
     print('meminfo.used:',meminfo.used/(1024*1024))

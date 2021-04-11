@@ -19,7 +19,8 @@ import os
 # read highD dataset
 # tracks
 #base_path1 = r'D:\TUM论文工作\第五周工作\数据\数据1'
-base_path1 = r'/usr/stud/wangx0/storage/slurm/JieW/highd1/tracks'
+#base_path1 = r'/usr/stud/wangx0/storage/slurm/JieW/highd1/tracks'
+base_path1 = r'D:/shared/AI/LSTM/dataset/'
 files1 = os.listdir(base_path1)
 files1.sort(key=lambda x: int(x.split('_')[0]))
 dfs1=[]
@@ -41,6 +42,9 @@ for path2 in files2:
 
 
 # add drivingDirection and numLaneChanges to tracks.excel
+##>>> b = [4,5,6]
+#>>> c = [4,5,6,7,8]
+#>>> zipped = zip(a,b)#  [(1, 4), (2, 5), (3, 6)]   # 打包为元组的列表# range()排列，
 numdata=60
 for i,j in zip(range(numdata),range(numdata)):
     df1=dfs1[i]
